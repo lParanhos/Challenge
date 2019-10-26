@@ -1,8 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import DescriptionExercise from "../DescriptionExercise";
-import prototypeClimao from "../../assets/prototypes/climao.png";
-import classes from "./Excercise4.module.scss";
 import Container from  './components/container';
 
 const prototypeUrl =
