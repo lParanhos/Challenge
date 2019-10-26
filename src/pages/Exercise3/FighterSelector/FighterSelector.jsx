@@ -12,15 +12,15 @@ function FighterSelector() {
         setFighter(fighter);
     }
 
+
     useEffect(() => {
         setTimeout(() => {
-            setFighterSelectionHistory([
-                ...fighterSelectionHistory,
+            let aux = fighterSelectionHistory.concat(
                 {
                     fighter,
                     time: (new Date()).toLocaleTimeString()
-                }
-            ]);
+                })
+            setFighterSelectionHistory(aux);
         }, 0);
     }, [fighter])
 
@@ -36,7 +36,7 @@ function FighterSelector() {
                 <span>History:</span>
                 <div>
                     {fighterSelectionHistory.map(({ fighter, time }) => (
-                        <p key={fighter+time}>{`[${time}] ${fighter} was selected.`}</p>
+                        <p key={fighter + time}>{`[${time}] ${fighter} was selected.`}</p>
                     ))}
                 </div>
             </div>

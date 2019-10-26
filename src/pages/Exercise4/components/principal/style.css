@@ -1,0 +1,45 @@
+.box {
+     width: 50%;
+ /*   height: 100px; */
+    background: #fff;
+    margin: 10px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 30px;  
+}
+
+.minMax{
+    text-align: end;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 30px;
+}
+
+.sensacao{
+    display: flex;
+    flex-direction: column;
+}
+
+.graus {
+    font-size: 140px;
+    text-align: center;
+}
+
+.tempo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.divider {
+    border-left:1px solid #38546d; 
+    border-right:1px solid #16222c; 
+    height:80px;
+    position:absolute;
+    right:249px;
+    top:10px; 
+}

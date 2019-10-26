@@ -54,9 +54,10 @@ class TodoList extends Component {
             result.destination.index
         );
 
-        this.state.todos = todos;
+        this.setState({ todos: todos }, () => {
+            this.props.onChangeOrder(todos)
+        })
 
-        this.props.onChangeOrder(this.state.todos);
     }
 
     // Normally you would want to split things out into separate components.
@@ -110,7 +111,7 @@ TodoList.propTypes = {
 
 TodoList.defaultProps = {
     todos: [],
-    onChangeOrder: () => {}
+    onChangeOrder: () => { }
 };
 
 export default TodoList;

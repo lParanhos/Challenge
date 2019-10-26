@@ -175,8 +175,8 @@ function App() {
                 <div className={classes.NextTasks}>
                     <h1>Próximas tarefas:</h1>
                     <ul>
-                        {Object.keys(nextActivities).map(category => (
-                            <li>
+                        {Object.keys(nextActivities).map((category, i) => (
+                            <li key={i}>
                                 <strong>{category}</strong>:{" "}
                                 {nextActivities[category]}
                             </li>

@@ -55,7 +55,6 @@
     "eslintConfig": {
         "extends": "react-app"
     },
-    
     "lint-staged": {
         "*.{js,jsx}": [
             "./node_modules/pretty-quick/bin/pretty-quick.js --staged",
