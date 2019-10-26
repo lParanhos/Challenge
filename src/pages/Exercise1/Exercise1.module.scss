@@ -1,0 +1,70 @@
+@import "../../sass/main.scss";
+
+.Exercise1 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    &Container {
+        height: calc(100% - 12rem);
+        display: flex;
+        min-width: 100rem;
+        margin-top: 2rem;
+        .AvailableContainer {
+            width: 30%;
+        }
+        .CaptureContainer {
+            width: 70%;
+        }
+        .AvailableContainer,
+        .CaptureContainer {
+            height: 100%;
+            overflow: scroll;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            > * {
+                margin: .5rem;
+            }        
+        }
+        .Table {
+            width: 100%;
+            tr {
+                border: 1px solid #d6d6d6;
+                td {
+                    height: 100%;
+                    padding: 1.5rem;
+                }
+            }
+            .PokemonContainer {
+                display: flex;
+                align-items: center;
+                text-transform: capitalize;
+                img {
+                    margin-right: 2rem;
+                }
+            }
+            .Number {
+                width: 20%
+            }
+            .Description {
+                width: 60%
+            }
+            .Action {
+                width: 20%;
+                svg {
+                    width: 3.2rem;
+                    height: 3.2rem;
+                    path:nth-child(4) {
+                        fill: #E6E9ED;
+                    }
+                    &:hover {
+                        cursor: pointer;
+                        path:nth-child(4) {
+                            fill: #50c878;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

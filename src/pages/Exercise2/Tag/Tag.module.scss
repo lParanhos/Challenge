@@ -1,0 +1,25 @@
+@import "../../../sass/main.scss";
+@import "../../../sass/utils/variables";
+
+.Tag {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-left: calc(100% - 10rem);
+    margin-right: 0rem;
+    margin-bottom: -0.5rem;
+    padding: 0 0.7rem;
+    color: $color-dusty-gray;
+    font-size: 1.2rem;
+    font-variant: tabular-nums;
+    line-height: 1.5;
+    list-style: none;
+    display: inline-block;
+    height: auto;
+    line-height: 2rem;
+    white-space: nowrap;
+    background: $color-alabaster;
+    border: 0.1rem solid $color-alto;
+    border-radius: 7px;
+    text-align: center;
+    width: 10rem;
+}

@@ -1,0 +1,17 @@
+{
+    "translation": {
+        "app": {
+            "title": "React Day Challenge",
+            "menu": {
+                "exercise_1": "Exercício 1",
+                "exercise_2": "Exercício 2",
+                "exercise_3": "Exercício 3",
+                "exercise_4": "Exercício 4"
+            },
+            "footer": {
+                "main": "© 2019 Venturus. All rights reserved."
+            }
+        },
+        "general": {}
+    }
+}

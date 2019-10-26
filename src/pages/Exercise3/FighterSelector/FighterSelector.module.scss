@@ -1,0 +1,41 @@
+@import "../../../sass/main.scss";
+
+.FighterSelector {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border: .1rem solid $color-dusty-gray;
+    border-radius: .6rem;
+    margin: 0 1rem;
+    padding: 2rem;
+    box-shadow: 0rem .3rem .6rem 0 $color-shadow-rgba-card;
+    > * {
+        flex: 0 40%;
+    }
+}
+
+.FighterName {
+    text-transform: capitalize;
+    font-size: 7rem;
+    width: 100%;
+    margin-left: auto;
+}
+
+.Boxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.HistoryLog {
+    flex-grow: 1;
+    background-color: $color-alabaster;
+    color: $color-dusty-gray;
+    width: 100%;
+    min-height: 30rem;
+    max-height: 30rem;
+    overflow: scroll;
+}

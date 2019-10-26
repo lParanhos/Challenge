@@ -1,0 +1,13 @@
+@import "../../../../sass/main.scss";
+
+.Footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $color-alabaster;
+    box-shadow: 0 -0.2rem 0.4rem 0 $color-shadow-rgba;
+    height: $footer-height;
+    color: $color-dusty-gray;
+    font-size: 1.2rem;
+    letter-spacing: 0;
+}

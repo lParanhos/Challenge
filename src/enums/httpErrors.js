@@ -1,0 +1,10 @@
+export default {
+    CREATED: 201,
+    OK: 200,
+    TEMPORARILY_MOVED: 302,
+    BAD_REQUEST: 400,
+    UNAUTHENTICATED: 401,
+    FORBIDDEN: 403,
+    NOT_FOUND: 404,
+    SERVER_ERROR: 500
+};

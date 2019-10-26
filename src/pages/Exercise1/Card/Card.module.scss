@@ -1,0 +1,35 @@
+@import "../../../sass/main.scss";
+
+.CardContainer {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    height: 13rem;
+    width: 13rem;
+    border: .1rem solid $color-alto;
+    border-radius: .6rem;
+    box-shadow: 0rem .3rem .6rem 0 $color-shadow-rgba-card;
+    position: relative;
+    outline: none;
+    text-transform: capitalize;
+
+    .Remove {
+        width: 2rem;
+        height: 2rem;
+        position: absolute;
+        top: .5rem;
+        right: .5rem;
+        fill: $color-amaranth;
+        &:hover {
+            fill: darken($color-amaranth, 20%);
+            transform: scale(1.2);
+        }
+    }
+    &:hover {
+        .Remove {
+            cursor: pointer;
+            display: inline;
+        }
+    }
+}

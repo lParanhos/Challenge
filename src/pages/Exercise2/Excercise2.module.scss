@@ -1,0 +1,15 @@
+.Excercise2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.NextTasks {
+    padding: 0rem 0rem 0rem 3rem;
+    width: 40%;
+
+    ul {
+        padding-top: 2rem;
+    }
+}

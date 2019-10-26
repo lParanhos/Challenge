@@ -1,0 +1,55 @@
+@import "../../../../sass/main.scss";
+
+.Header {
+    display: flex;
+    align-items: center;
+    height: $header-height;
+    width: 100%;
+    color: $color-white;
+    background-image: linear-gradient(230deg, $color-minsk 0%, $color-amaranth 100%);
+}
+
+.Title {
+    margin: 0 2rem 0 auto;
+    font-size: 2rem;
+    letter-spacing: -0.01rem;
+    display: flex;
+    align-items: center;
+    .Icon {
+        height: 3rem;
+        width: 3rem;
+        margin-right: .6rem;
+    }
+}
+
+.Navigation {
+    margin-left: 4rem;
+    font-size: 1.4rem;
+    letter-spacing: 0;
+}
+
+.NavigationItem {
+    color: $color-white;
+    &:hover {
+        color:  $color-white;
+        opacity: 0.6;
+    }
+    &:not(:last-child) {
+        margin-right: 4rem;
+    }
+    &:focus{
+        text-decoration: none;
+    }
+}
+
+.ActiveNavigationItem {
+    color:  $color-white;
+    opacity: 0.6;
+    &:link,
+    &:visited
+    &:hover,
+    &:active {
+        color:  $color-white;
+        opacity: 0.6;
+    }
+}

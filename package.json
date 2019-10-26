@@ -1,0 +1,90 @@
+{
+    "name": "client",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "axios": "0.19.0",
+        "connected-react-router": "6.4.0",
+        "history": "4.9.0",
+        "i18next": "15.1.3",
+        "prop-types": "15.7.2",
+        "react": "16.8.6",
+        "react-beautiful-dnd": "11.0.5",
+        "react-dom": "16.8.6",
+        "react-redux": "7.0.3",
+        "react-router": "5.0.0",
+        "react-router-dom": "5.0.0",
+        "react-scripts": "3.0.1",
+        "redux": "4.0.1",
+        "redux-devtools-extension": "2.13.8",
+        "redux-thunk": "2.3.0"
+    },
+    "devDependencies": {
+        "@babel/preset-react": "7.0.0",
+        "babel-core": "6.26.3",
+        "babel-jest": "24.8.0",
+        "babel-plugin-syntax-class-properties": "6.13.0",
+        "babel-plugin-transform-class-properties": "6.24.1",
+        "babel-preset-env": "1.7.0",
+        "babel-preset-react": "6.24.1",
+        "enzyme": "3.9.0",
+        "enzyme-adapter-react-16": "1.13.1",
+        "eslint": "5.16.0",
+        "eslint-config-airbnb": "17.1.0",
+        "eslint-config-prettier": "4.3.0",
+        "eslint-plugin-import": "2.17.3",
+        "eslint-plugin-jest": "22.6.4",
+        "eslint-plugin-jsx-a11y": "6.2.1",
+        "eslint-plugin-prettier": "3.1.0",
+        "eslint-plugin-react": "7.13.0",
+        "husky": "2.3.0",
+        "identity-obj-proxy": "3.0.0",
+        "jest": "24.7.1",
+        "lint-staged": "8.1.7",
+        "node-sass": "4.12.0",
+        "prettier": "1.17.1",
+        "pretty-quick": "1.11.0"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "./node_modules/.bin/jest",
+        "eject": "react-scripts eject",
+        "lint-staged": "./node_modules/lint-staged/index.js"
+    },
+    "eslintConfig": {
+        "extends": "react-app"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "npm run lint-staged",
+            "pre-push": "npm test"
+        }
+    },
+    "lint-staged": {
+        "*.{js,jsx}": [
+            "./node_modules/pretty-quick/bin/pretty-quick.js --staged",
+            "git add"
+        ]
+    },
+    "jest": {
+        "setupFilesAfterEnv": [
+            "<rootDir>/src/config/setupTests.js"
+        ],
+        "moduleNameMapper": {
+            "\\.(css|less|sass|scss|svg|png|jpg)$": "identity-obj-proxy"
+        }
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    }
+}

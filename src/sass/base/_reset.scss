@@ -1,0 +1,37 @@
+@import "../main.scss";
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    // rem definitions:
+    font-size: 62.5%; // 1 rem = 10px
+}
+
+body {
+    font-size: 1.5rem;
+    font-family: -apple-system, -webkit-system-font, Helvetica, Arial, san-serif;
+    font-weight: 400;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+ul {
+    padding-inline-start: 0;
+    list-style: none;
+}
+
+a {
+    color: $color-azure-radiance;
+    text-decoration: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}

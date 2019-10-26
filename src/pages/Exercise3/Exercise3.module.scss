@@ -1,0 +1,11 @@
+@import "../../sass/main.scss";
+
+.Exercise3 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    > * {
+        width: 38%;
+        min-width: 520px;
+    }
+}
