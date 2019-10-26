@@ -46,7 +46,7 @@ class Exercise1 extends Component {
                         <table className={classes.Table}>
                             <tbody>
                                 {this.state.availableElements.map((element, index) => (
-                                    <tr key={Math.random()}>
+                                    <tr key={index}>
                                         <td className={classes.Number}>
                                             <div>{`#${element.number}`}</div>
                                         </td>
