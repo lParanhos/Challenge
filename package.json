@@ -55,12 +55,7 @@
     "eslintConfig": {
         "extends": "react-app"
     },
-    "husky": {
-        "hooks": {
-            "pre-commit": "npm run lint-staged",
-            "pre-push": "npm test"
-        }
-    },
+    
     "lint-staged": {
         "*.{js,jsx}": [
             "./node_modules/pretty-quick/bin/pretty-quick.js --staged",

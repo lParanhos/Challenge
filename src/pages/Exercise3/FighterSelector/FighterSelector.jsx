@@ -8,6 +8,7 @@ function FighterSelector() {
     const [fighterSelectionHistory, setFighterSelectionHistory] = useState([]);
 
     const onFighterChange = fighter => {
+        console.log(fighter)
         setFighter(fighter);
     }
 
@@ -20,7 +21,7 @@ function FighterSelector() {
                     time: (new Date()).toLocaleTimeString()
                 }
             ]);
-        }, 1000);
+        }, 0);
     }, [fighter])
 
     return (
